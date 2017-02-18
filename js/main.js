@@ -6,7 +6,7 @@ $(document).ready(function () {
         verticallyCentered: false,
         fitToSection: true,
         onLeave: function (index, nextIndex, direction) {
-            console.log(index, nextIndex, direction);
+            //console.log(index, nextIndex, direction);
             if (direction === "down") {
                 $('#header').fadeOut();
                 $('#me').removeClass('scale-in');
