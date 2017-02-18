@@ -3,7 +3,7 @@ $(document).ready(function () {
         paddingTop: '64px',
         sectionSelector: '.section',
         slideSelector: '.horizontal-scrolling',
-        verticallyCentered: false,
+        verticallyCentered: true,
         fitToSection: true,
         onLeave: function (index, nextIndex, direction) {
             //console.log(index, nextIndex, direction);
