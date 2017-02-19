@@ -8,10 +8,12 @@
     <title>Foo</title>
     <link href="css/materialize.min.css" rel="stylesheet">
     <link href="css/jquery.fullpage.min.css" rel="stylesheet">
+    <link href="css/palette.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--<link href="https://fonts.googleapis.com/css?family=Pangolin|Roboto" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Barrio|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <style>
         img#me {
             height: 66vh !important;
@@ -22,7 +24,7 @@
         }
 
         h1, h2, h3, h5 {
-            font-family: 'Barrio', cursive;
+            font-family: 'Righteous', cursive;
             color: black;
         }
 
@@ -41,14 +43,14 @@
     <header id="header">
         <nav class="red">
             <div class="nav-wrapper z-depth-5">
-                <a href="#" class="brand-logo"><h2 style="margin: 0;">Fourat Janabi</h2></a>
+                <a href="#" class="brand-logo text-primary-color"><h2 class="text-primary-color accent-color" style="margin: 0;">Fourat Janabi</h2></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li data-menuanchor="#1st" class="active"><a href="#1st">Me</a></li>
-                    <li data-menuanchor="#2nd"><a href="#2nd">About Me</a></li>
-                    <li data-menuanchor="#3rd"><a href="#3rd">Skills</a></li>
-                    <li data-menuanchor="#4th"><a class="" href="#4th">Professional Portfolio</a></li>
-                    <li data-menuanchor="#5th"><a class="" href="#5th">Personal Portfolio</a></li>
-                    <li data-menuanchor="#6th"><a href="#6th">Contact</a></li>
+                    <li data-menuanchor="#1st" class="active"><a class="text-primary-color" href="#1st">Me</a></li>
+                    <li data-menuanchor="#2nd"><a class="text-primary-color" href="#2nd">About Me</a></li>
+                    <li data-menuanchor="#3rd"><a class="text-primary-color" href="#3rd">Skills</a></li>
+                    <li data-menuanchor="#4th"><a class="text-primary-color" class="" href="#4th">Professional Portfolio</a></li>
+                    <li data-menuanchor="#5th"><a class="text-primary-color" class="" href="#5th">Personal Portfolio</a></li>
+                    <li data-menuanchor="#6th"><a class="text-primary-color" href="#6th">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -59,11 +61,11 @@
 
 
             <!-- PHOTO -->
-            <section id="photo" class="section" data-anchor="1st">
+            <section id="photo" class="section default-primary-color" data-anchor="1st">
 
                 <div class="row">
                     <div class="col s12">
-                        <h1 class="center-align">Hi there...</h1>
+                        <h1 class="center-align text-primary-color ">Hi there...</h1>
                     </div>
 
                     <div class="col s12 center-align">
@@ -74,12 +76,12 @@
             </section>
             
             <!-- ABOUT ME -->
-            <section class="section" data-anchor="2nd" style="background-color: darkgray; color: black;">
+            <section class="section dark-primary-color" data-anchor="2nd">
                 <div class="row">
                     <div class="col s2"></div>
                     <div class="col s6">
-                        <h1 class="hide-on-small-only">I'm a web ninja...</h1>
-                        <h3 class="hide-on-large-only hide-on-med-only">I'm a web ninja...</h3>
+                        <h1 class="hide-on-small-only text-primary-color">I'm a web ninja...</h1>
+                        <h3 class="hide-on-large-only hide-on-med-only text-primary-color">I'm a web ninja...</h3>
                     </div>
                     <div class="col s2">
                         <i class="material-icons large">mood</i>
@@ -89,7 +91,7 @@
                 
                 <div class="row">
                     <div class="col s12 m8 offset-m2">
-                        <p class="flow-text" style="text-align: justify">
+                        <p class="flow-text text-primary-color" style="text-align: justify">
                             I've been a web developer for 2 years. In that time, I've built complex client-side reports for Fortune 
                             500 companies, developed 
                             <span style="background-color: darkgray; color: black; padding: 0; border: 0; border-image-width: 0;" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Single Page Application">SPA's</span> 
@@ -98,7 +100,7 @@
                             <span style="background-color: darkgray; color: black; padding: 0; border: 0; border-image-width: 0;" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Progressive Web App">PWA</span>
                             on the Android and iOS platforms.
                         </p>
-                        <p class="flow-text">
+                        <p class="flow-text text-primary-color">
                             Keep scrolling on down to get a handle on my skills and a peek at my portfolio.
                         </p>
                     </div>    
@@ -107,24 +109,24 @@
             </section>
 
             <!-- SKILLS -->
-            <section class="section" data-anchor="3rd" style="background-color: #A1B8BF;">
+            <section class="section default-primary-color" data-anchor="3rd">
                 <div class="row">
-                    <h3 class="center-align" id="mySkillsTitle">My skills...</h3>
+                    <h3 class="center-align primary-text-color" id="mySkillsTitle">My skills...</h3>
                 </div>
                 <div class="row">
                     <div class="col s12 m8 offset-m2">
-                        <ul class="collapsible z-depth-5" data-collapsible="accordion" style="background-color: #fff;">
+                        <ul class="collapsible z-depth-5" data-collapsible="accordion">
                             <li class="skills">
-                                <div class="collapsible-header"><i class="material-icons"></i>Javascript</div>
+                                <div class="collapsible-header light-primary-color primary-text-color"><i class="material-icons"></i>Javascript</div>
                                 <div class="collapsible-body">
                                     <span>
-                                        <p class="flow-text">
+                                        <p class="flow-text text-primary-color">
                                             Advanced intermediate level knowledge of Javascript ES6 and various libraries 
                                             and frameworks of the <span style="background-color: white; color: black; padding: 0; border: 0; border-image-width: 0;" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Model-View-ViewModel">MVVM</span> flavor.
                                         </p>
                                     </spa>
-                                    <ul class="collection with-header">
-                                        <li class="collection-header"><h4>Libraries</h4></li>
+                                    <ul class="collection with-header ">
+                                        <!--<li class="collection-header"><h4>Libraries</h4></li>-->
                                         <li class="collection-item">
                                             <div class="row" style="margin: 0;">
                                                 <div class="col s3">
@@ -203,7 +205,7 @@
                             </li>
                             <!-- HTML -->
                             <li class="skills">
-                                <div class="collapsible-header"><i class="material-icons"></i>HTML</div>
+                                <div class="collapsible-header  light-primary-color"><i class="material-icons"></i>HTML</div>
                                 <div class="collapsible-body">
                                     <ul class="collection with-header">
                                         <li class="collection-item">
@@ -223,11 +225,11 @@
                             </li>
                             <!-- CSS -->
                             <li class="skills">
-                                <div class="collapsible-header"><i class="material-icons"></i>CSS</div>
+                                <div class="collapsible-header light-primary-color"><i class="material-icons"></i>CSS</div>
                                 <div class="collapsible-body">
                                     
                                     <ul class="collection with-header">
-                                        <li class="collection-header"><h4>Frameworks</h4></li>
+                                        <!--<li class="collection-header"><h4>Frameworks</h4></li>-->
                                         <li class="collection-item">
                                             <div class="row" style="margin: 0;">
                                                 <div class="col s3">
@@ -257,11 +259,11 @@
                             </li>
                             <!-- OTHER -->
                             <li class="skills">
-                                <div class="collapsible-header"><i class="material-icons"></i>Other</div>
+                                <div class="collapsible-header light-primary-color"><i class="material-icons"></i>Other</div>
                                 <div class="collapsible-body">
                                 
                                     <ul class="collection with-header">
-                                        <li class="collection-header"><h4>Other Skills</h4></li>
+                                        <!--<li class="collection-header"><h4>Other Skills</h4></li>-->
                                         <li class="collection-item">
                                             <div class="row" style="margin: 0;">
                                                 <div class="col s3">
@@ -362,7 +364,7 @@
             -->
 
             <!-- PERSONAL PORTFOLIO -->
-            <section class="section" data-anchor="5th" style="background-color: #BFA8A1">
+            <section class="section light-primary-color" data-anchor="5th">
                 <div class="horizontal-scrolling">
                     <div class="row">
                         <div class="col s11 offset-s1 m8 offset-m2 center-align">
@@ -376,17 +378,17 @@
                 <!--
                 -->
 
-                <div class="horizontal-scrolling center-align" id="vuejs" style="background-color: #A9BFA1">
+                <div class="horizontal-scrolling center-align" id="vuejs">
                     <h3 class="center-align">Built on Google Cloud</h3>
                     <p class="flow-text">Javascript on the front-end, Python on the back-end</p>
-                    <img class="responsive-img" data-src="images/lifeapp/landing2.png" >
+                    <img class="responsive-img default-primary-color" data-src="images/lifeapp/landing2.png" >
                     
                 </div>
 
-                <div class="horizontal-scrolling center-align" id="movies" style="background-color: #A1B8BF">
+                <div class="horizontal-scrolling center-align" id="movies">
                     <h3 class="center-align">A personal media and travel life-tracker</h3>
                     <p class="flow-text">Track the movies, tv shows you watch, books read, and games played.</p>
-                    <img class="responsive-img" data-src="images/lifeapp/movies.jpg">
+                    <img class="responsive-img default-primary-color" data-src="images/lifeapp/movies.jpg">
                 </div>
 
                 <!--
@@ -396,25 +398,25 @@
                     </div>
                 -->
 
-                <div class="horizontal-scrolling center-align" id="lifeapp" style="background-color: #B7A1BF">
+                <div class="horizontal-scrolling center-align" id="lifeapp">
                     <h3 class="center-align">Get awesome stats!</h3>
-                    <img class="responsive-img" data-src="images/lifeapp/stats.jpg">
+                    <img class="responsive-img default-primary-color" data-src="images/lifeapp/stats.jpg">
                 </div>
 
-                <div class="horizontal-scrolling center-align" id="mobile" style="background-color: #fff">
+                <div class="horizontal-scrolling center-align" id="mobile">
                     <h3 class="center-align">Responsive Design</h3>
-                    <img class="responsive-img" data-src="images/lifeapp/mobile.jpg">
+                    <img class="responsive-img default-primary-color" data-src="images/lifeapp/mobile.jpg">
                 </div>
 
-                <div class="horizontal-scrolling center-align" id="sw" style="background-color: #fff">
+                <div class="horizontal-scrolling center-align" id="sw">
                     <h3 class="center-align">Incorporates Service Workers</h3>
-                    <img class="responsive-img" data-src="images/lifeapp/sw2.JPG">
+                    <img class="responsive-img default-primary-color" data-src="images/lifeapp/sw2.JPG">
                 </div>
 
             </section>
 
             <!-- FIND ME -->
-            <section class="section" data-anchor="6th" style="background-color: #A9BFA1">
+            <section class="section dark-primary-color" data-anchor="6th">
                 <div class="row">
                     <div class="col s12 center-align">
                         <h1></h1>
