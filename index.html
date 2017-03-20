@@ -1,513 +1,296 @@
-﻿<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Foo</title>
-    <link href="css/materialize.min.css" rel="stylesheet">
-    <link href="css/jquery.fullpage.min.css" rel="stylesheet">
-    <link href="css/palette.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css?family=Pangolin|Roboto" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Barrio|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    <style>
-        img#me {
-            height: 66vh !important;
-        }
-
-        .evenMargin {
-            margin-bottom: 7.5px !important;
-        }
-
-        h1, h2, h3, h5 {
-            font-family: 'Righteous', cursive;
-            color: black;
-        }
-
-        p, li > a {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .noMargin {
-            margin: 0 !important;
-        }
-        
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-
-    <header id="header">
-        <nav class="accent-color">
-            <div class="nav-wrapper z-depth-5">
-                <a href="#" class="brand-logo text-primary-color"><h2 class="text-primary-color accent-color" style="margin: 0;">Fourat Janabi</h2></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <!--
-                    <li data-menuanchor="#1st" class="active"><a class="text-primary-color" href="#1st">Me</a></li>
-                    <li data-menuanchor="#2nd"><a class="text-primary-color" href="#2nd">About Me</a></li>
-                    <li data-menuanchor="#3rd"><a class="text-primary-color" href="#3rd">Skills</a></li>
-                    <li data-menuanchor="#4th"><a class="text-primary-color" class="" href="#4th">Professional Portfolio</a></li>
-                    <li data-menuanchor="#5th"><a class="text-primary-color" class="" href="#5th">Personal Portfolio</a></li>
-                    <li data-menuanchor="#6th"><a class="text-primary-color" href="#6th">Contact</a></li>
-                    -->
-                </ul>
-            </div>
-        </nav>
-            
-    </header>
-        
-    <div id="fullpage">
-
-
-            <!-- PHOTO -->
-            <section id="photo" class="section default-primary-color">
-
-                <div class="row">
-                    <div class="col s12">
-                        <h1 class="center-align text-primary-color ">Hi there...</h1>
-                    </div>
-
-                    <div class="col s12 center-align">
-                        <img id="me" src="images/foo.JPG" class="responsive-img center-align z-depth-5 scale-transition" data-adaptive-background data-ab-parent='#photo'>
-                    </div>
-                </div>
-
-            </section>
-            
-            <!-- ABOUT ME -->
-            <section class="section dark-primary-color">
-
-                <div class="z-depth-5 default-primary-color">
-                    <div class="row">
-                        <div class="col s2"></div>
-                        <div class="col s6">
-                            <h1 class="hide-on-small-only text-primary-color">I'm a web developer...</h1>
-                            <h3 class="hide-on-large-only hide-on-med-only text-primary-color">I'm a web ninja...</h3>
-                        </div>
-                        <div class="col s2">
-                            <i class="material-icons large">mood</i>
-                        </div>
-                        <div class="col s2"></div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col s12 m8 offset-m2">
-                            <p class="flow-text text-primary-color" style="text-align: justify">
-                                I've been a web developer for 2 years. In that time, I've built complex client-side reports for Fortune 
-                                500 companies, developed 
-                                <span style="background-color: darkgray; color: black; padding: 0; border: 0; border-image-width: 0;" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Single Page Application">SPA's</span> 
-                                for the little guy, and built a variety of personal projects, including
-                                the requisite To-Do app and a life-tracking app that incorporates Python, NoSQL Databases, and runs as a 
-                                <span style="background-color: darkgray; color: black; padding: 0; border: 0; border-image-width: 0;" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Progressive Web App">PWA</span>
-                                on the Android and iOS platforms.
-                            </p>
-                            <p class="flow-text text-primary-color">
-                                Keep scrolling on down to get a handle on my skills and a peek at my portfolio.
-                            </p>
-                        </div>    
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- SKILLS -->
-            <section class="section default-primary-color">
-                <div class="z-depth-5 dark-primary-color">
-                    <div class="row">
-                        <h3 class="center-align primary-text-color" id="mySkillsTitle">My skills...</h3>
-                    </div>
-                    <div class="row hide-on-med-and-down">
-                        <div class="col s12 m8 offset-m2">
-                            <ul class="collapsible z-depth-5" data-collapsible="accordion">
-                                <li class="skills">
-                                    <div class="collapsible-header light-primary-color primary-text-color"><i class="material-icons"></i>Javascript</div>
-                                    <div class="collapsible-body">
-                                        <span>
-                                            <p class="flow-text text-primary-color">
-                                                Advanced intermediate level knowledge of Javascript ES6 and various libraries 
-                                                and frameworks of the <span style="background-color: white; color: black; padding: 0; border: 0; border-image-width: 0;" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Model-View-ViewModel">MVVM</span> flavor.
-                                            </p>
-                                        </spa>
-                                        <ul class="collection with-header z-depth-3">
-                                            <!--<li class="collection-header"><h4>Libraries</h4></li>-->
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Vue.js v2+</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 70%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">VueX</p> 
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 75%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Vue-Router</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 75%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                            </li>
-                                            <li class="collection-item hide-on-small-only">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Knockout.js</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 70%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item hide-on-small-only">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Progressive Web Apps</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 60%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item hide-on-small-only">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">React.js</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 30%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </li>
-                                <!-- HTML -->
-                                <li class="skills">
-                                    <div class="collapsible-header  light-primary-color"><i class="material-icons"></i>HTML</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection with-header z-depth-3">
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">HTML5</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 80%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <!-- CSS -->
-                                <li class="skills">
-                                    <div class="collapsible-header light-primary-color"><i class="material-icons"></i>CSS</div>
-                                    <div class="collapsible-body">
-                                        
-                                        <ul class="collection with-header z-depth-3">
-                                            <!--<li class="collection-header"><h4>Frameworks</h4></li>-->
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Bootstrap 3</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 90%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">MaterializeCSS</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 90%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <!-- OTHER -->
-                                <li class="skills">
-                                    <div class="collapsible-header light-primary-color"><i class="material-icons"></i>Other</div>
-                                    <div class="collapsible-body">
-                                    
-                                        <ul class="collection with-header z-depth-3">
-                                            <!--<li class="collection-header"><h4>Other Skills</h4></li>-->
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Google Cloud inc. Data Store, App Engine</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 70%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Python</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Git</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 60%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row" style="margin: 0;">
-                                                    <div class="col s3">
-                                                        <p class="noMargin">Node.js</p>
-                                                    </div>
-                                                    <div class="col s9">
-                                                        <div class="progress evenMargin">
-                                                            <div class="determinate" style="width: 25%"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                        </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="row hide-on-large-only">
-                        <div class="col s12">
-                            <ul class="collection">
-                                <li class="collection-item">
-                                    <p class="flow-text" style="margin-top: 0;">Javascript</p>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 70%"></div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <p class="flow-text" style="margin-top: 0;">Vue.js, Knockout.js</p>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 70%"></div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <p class="flow-text"  style="margin-top: 0;">HTML5</p>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 80%"></div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <p class="flow-text"  style="margin-top: 0;">CSS3</p>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 60%"></div>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>         
-            </section>
-
-            <!-- CORPORATE PORTFOLIO START -->
-            <!--
-            <section class="section" data-anchor="4th" style="background-color: #B7A1BF">
-
-                <div class="horizontal-scrolling">
-                    <div class="row valign-wrapper">
-                        <div class="col s8 offset-s2">
-                            <h1>Professional portfolio</h1>
-                        </div>
-                        <div class="col s2 valign">
-                            <span><i class="material-icons large" id="arrow1">arrow_forward</i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-scrolling" id="scorecard">
-                    <h1 class="center-align">1</h1>
-                    <img class="responsive-img" data-adaptive-background data-src="images/scorecard.png">
-                    
-                </div>
-
-                <div class="horizontal-scrolling" id="traveler">
-                    <h1 class="center-align">2</h1>
-                    <img class="responsive-img" data-adaptive-background data-src="images/traveler.png">
-                    
-                </div>
-
-                <div class="horizontal-scrolling" id="ytd">
-                    <h1 class="center-align">3</h1>
-                    <img class="responsive-img" data-adaptive-background data-src="images/ytd.png">
-                    
-                </div>
-
-                <div class="horizontal-scrolling" id="lpms">
-                    <h1 class="center-align">4</h1>
-                    <img class="responsive-img" data-adaptive-background data-src="images/lpms.png">
-                </div>
-                
-            </section>
-            -->
-
-            <!-- PERSONAL PORTFOLIO -->
-            <section class="section light-primary-color" >
-                <div class="horizontal-scrolling">
-                    <div class="row">
-                        <div class="col s11 offset-s1 m8 offset-m2 center-align">
-                            <h1>Personal portfolio</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="">
-                    <h1>#1</h1>
-                    <h3 class="center-align">"Your" Life App</h3> 
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="vuejs">
-                    <h3 class="center-align">Built on Google Cloud</h3>
-                    <p class="flow-text">Javascript on the front-end, Python on the back-end</p>
-                    <img class="responsive-img default-primary-color z-depth-5" data-src="images/lifeapp/landing2.png" >
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="movies">
-                    <h3 class="center-align">A personal media and travel life-tracker</h3>
-                    <p class="flow-text">Track the movies, tv shows you watch, books read, and games played.</p>
-                    <img class="responsive-img default-primary-color z-depth-5" data-src="images/lifeapp/movies.jpg">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="lifeapp">
-                    <h3 class="center-align">Get awesome stats!</h3>
-                    <img class="responsive-img default-primary-color z-depth-5" data-src="images/lifeapp/stats.JPG">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="mobile">
-                    <h3 class="center-align">Responsive Design</h3>
-                    <img class="responsive-img light-primary-color" data-src="images/lifeapp/rounded_corners.png">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="sw">
-                    <h3 class="center-align">Incorporates Service Workers</h3>
-                    <img class="responsive-img" data-src="images/lifeapp/rounded_corners2.png">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="">
-                    <h1>#2</h1>
-                    <h3 class="center-align">JustDO</h3>
-                    <h6>The 'requisite' boring Todo app</h6>
-                    <h4></h4>
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="tvshows">
-                    <h3 class="center-align">Works in the browser</h3>
-                    <img class="responsive-img" data-src="images/justdo/just1.jpg">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="tvshows">
-                    <h3 class="center-align">Mobile responsive</h3>
-                    <img class="responsive-img" data-src="images/justdo/just2.1.png">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="tvshows">
-                    <h3 class="center-align">Works offline with Service Workers</h3>
-                    <img class="responsive-img" data-src="images/justdo/just3.1.png">
-                </div>
-
-                <div class="horizontal-scrolling center-align" id="tvshows">
-                    <h3 class="center-align">Utilizes localStorage for continuity</h3>
-                    <img class="responsive-img" data-src="images/justdo/just4.1.png">
-                </div>
-
-            </section>
-            
-
-
-            <!-- FIND ME -->
-            <section class="section dark-primary-color">
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <h1></h1>
-                    </div>
-                    <div class="col s12 m4 center-align">
-                        <a class="" href="https://www.linkedin.com/in/fourat-janabi-58a76a31/" target="_blank">
-                            <img src="images/social/linkedin-logo.png" alt="linkedin" class="social responsive-img scale-transition scale-out">
-                        </a>
-                    </div>
-                    <div class="col s12 m4 center-align">
-                        <a class="" href="https://www.github.com/fouratj" target="_blank">
-                            <img target="_blank" src="images/social/github-logo.png" alt="twitter" class="social responsive-img scale-transition scale-out">
-                        </a>
-                    </div>
-                    <div class="col s12 m4 center-align">
-                        <a class="" href="mailto:fouratj@gmail.com?Subject=Enquiry">
-                            <img target="_blank" src="images/social/close-envelope.png" alt="twitter" class="social responsive-img scale-transition scale-out">
-                        </a>
-                    </div>
-                </div>                                
-            </section>
-
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-                
-        
-    
-    <script defer src="js/jquery/jquery-3.1.1.js"></script>
-    <script defer src="js/bootstrap/bootstrap.min.js"></script>
-    <script defer src="js/jquery/jquery.fullpage.min.js"></script>
-    <script defer src="js/materialize.min.js"></script>
-    <!--<script defer src="js/jquery/jquery.adaptive-backgrounds.js"></script>-->
-    <script defer src="js/jquery/jquery.matchHeight.js"></script>
-    <script defer src="js/velocity.min.js"></script>
-    <script defer src="js/velocity.ui.min.js"></script>
-    <script defer src="js/main.js"></script>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Fourat Janabi</h1>
+            <h2>Web Developer</h2>
+            <!--<a href="#" class="btn-rounded-white">Download Resume</a>-->
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Highly qualified, tenacious, and well-accomplished Front End Developer with 5+ years of experience in activities related 
+                        to IT sectors, deliveries and service management, project management and functional requirements. 
+                        Armed with broad-based background and skills in the areas of providing 
+                        appropriate solution to IT and software needs. Outstanding ability to plan, coordinate, implement strategic development practices 
+                        and client business transformation procedures to bring significant improvements in efficiency, productivity and technical 
+                        processes, towards the successful attainment of organizational goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="Aug 2015 – Present">
+                <h3>PerytonOne Solutions</h3>
+                <h4>Web Developer</h4>
+                <p>
+                    PerytonOne Solutions is an independent software consulting company that develops software applications, development, testing, 
+                    and providing a support infrastructure. 
+                </p>
+            </div>
+
+            <div data-date="Apr 2014 – Aug 2015">
+                <h3>PerytonOne</h3>
+                <h4>IT Consultant</h4>
+                <p>
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.-->
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Udacity</h3>
+            <span class="education-date">Dec 2015 - Mar 2016</span>
+            <h4>Front-End Web Developer Nanodegree</h4>
+            <p>
+                <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.-->
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Udacity</h3>
+            <span class="education-date">Feb 2015 - June 2015</span>
+            <h4>Intro to Programming Nanodegree</h4>
+            <p>
+                <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.-->
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>University of Western Sydney</h3>
+            <span class="education-date">2004 - 2006</span>
+            <h4>Bachelor of Engineering in Computer Engineering - Not Completed</h4>
+            <!--
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>-->
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>My Life App</h3>
+                        <p>
+                            A webapp that tracks movies, tvshows watched, books read, games played, countries and continents travelled to, and
+                            bundles it all up into nice stats and details. Incorporates Service Workers so that it works offline on Android phones
+                            and functions as a webapp on iPhones. Beautifully designed, completely mobile-responsive, and built with Vue.js, MaterializeCSS,
+                            Google App Engine with Python on the back-end.
+                        </p>
+                        <a href="https://my-life-app.appspot.com">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>The Requisite Todo App</h3>
+                        <p>
+                            The requisite todo every developer is forced to to. Built with Vue.js, Service Workers, and hosted on Google App Engine.
+                        </p>
+                        <a href="https://justdotask.appspot.com/index.html">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Private Work</h3>
+                        <p>
+                            Unfortunately, most of my other work is done within Company Intranets and I am not able to disclose or show-off
+                            such work. My speciality is converting business and productivity reports, routinely of the Excel variety, along
+                            with all the data manipulation that involves into the Front-End to alleviate the need of syncing and email massive
+                            excel reports back and forth among executives and business folk. All this, on top of ensuring that their new reports
+                            are mobile-responsive, work on a majority of browsers (IE9+, Safari, Firefox, & Chrome), is lightweight, functional,
+                             and looks nice!
+                        </p>
+                        <p>If requested, I am able to provide small snippets of code related to these projects.</p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>Vue.js</li>
+            <li>Vue-X</li>
+            <li>Vue-Router</li>
+            <li>Knockout.js</li>
+            <li>MaterializeCSS</li>
+            <li>Bootstrap</li>
+            <li>Github</li>
+            <li>Progressive Web Apps</li>
+            <li>Firebase</li>
+            <li>Google App Engine</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/fouratj@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 FOURAT JANABI
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="www.github.com/fouratj"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="#"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/fourat-janabi-58a76a31/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
