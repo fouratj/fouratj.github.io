@@ -122,6 +122,12 @@ body {
         font-size: 0.9em;
         margin: 0;
       }
+
+      li {
+        color: $text;
+        font-size: 0.9rem;
+        margin: 0;
+      }
     }
 
     &:before,
